@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!--
+      HTML C64 Boot Loader
+      Plain HTML, CSS, and JavaScript, no emulator involved.
+      Originally built for a personal project by Corey J. Mihalko (CJ),
+      shared here for everyone, C64 lovers especially.
+    -->
+
+    <!-- Search engine and AI crawler controls. See README for why these
+         are here and whether you want to keep them. -->
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
+
+    <!-- Specific AI training crawler controls -->
+    <meta name="GPTBot" content="noindex, nofollow">
+    <meta name="ChatGPT-User" content="noindex, nofollow">
+    <meta name="ClaudeBot" content="noindex, nofollow">
+    <meta name="Claude-Web" content="noindex, nofollow">
+    <meta name="anthropic-ai" content="noindex, nofollow">
+    <meta name="Google-Extended" content="noindex, nofollow">
+    <meta name="CCBot" content="noindex, nofollow">
+    <meta name="PerplexityBot" content="noindex, nofollow">
+    <meta name="Applebot-Extended" content="noindex, nofollow">
+    <meta name="Bytespider" content="noindex, nofollow">
+
+    <!-- Cache and referrer controls -->
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, private">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="referrer" content="no-referrer">
+
+    <!-- Document metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BOOT</title>
+  <style>
+    :root{
+      --c64-blue: #2a2a8a;
+      --c64-light: #7b7bff;
+      --c64-white: #e6e6ff;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: var(--c64-blue);
+      color: var(--c64-light);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+    }
+    .screen {
+      height: 100%;
+      padding: 22px;
+      white-space: pre-wrap;
+      line-height: 1.35;
+      font-size: 16px;
+    }
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      height: 18px;
+      background: var(--c64-light);
+      animation: blink 0.9s steps(2,end) infinite;
+      margin-left: 2px;
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+    .title { color: var(--c64-white); }
+    .dim { opacity: 0.9; }
+  </style>
+</head>
+<body>
+  <div class="screen">
+<span class="title">**** COMMODORE 64 BASIC V2 ****</span>
+<span class="dim">
+64K RAM SYSTEM  38911 BASIC BYTES FREE
+
+READY.
+</span><span id="typed"></span><span class="cursor" id="cursor"></span>
+  </div>
+  <script src="boot.js"></script>
+</body>
+</html>
