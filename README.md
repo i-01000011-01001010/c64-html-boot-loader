@@ -6,7 +6,7 @@ a Commodore 64 loading a program, then hands off to your real site. Built
 to run once, quickly, and get out of the way, not to be a gimmick people
 sit through twice.
 
-Originally built for a personal project by Corey J. Mihalko (CJ), sharing
+Originally built for a personal project by CJ Mihalko, sharing
 it here for everyone, C64 lovers especially. Pulled out as a standalone,
 reusable piece so anyone can drop it into their own site.
 
